@@ -12,8 +12,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
-
-<body>
+<header>
+    <body>
     <div class="header-container">
         <div class="blauw"></div>
         <div class="pink">
@@ -37,7 +37,8 @@
         <button class="login">
             <p>Login</p>
         </button>
-    </div>
+     </div>
+</header>
 
     <div class="goose-idea-container">
         <div class="goose-idea">
@@ -72,19 +73,20 @@
         </div>
     </div>
 
-    <div class="post-goose-container">
+    <form action="send-goose.php" method="post" class="post-goose-container">
         <div class="send-goose">
             <h1>Send a post Goose</h1>
         </div>
-        <input type="email" class="email-input" placeholder="Your email" required>
-        <input type="text" class="name-input" placeholder="Your name" required>
-        <input type="message" class="message-input" placeholder="Your message" required>
-        <input type="goose-color" class="color-input" placeholder="Color of your goose" required>
-        <button class="send">
+        <input type="email" class="email-input" name="email" placeholder="Your email" required>
+        <input type="text" class="name-input" name="name" placeholder="Your name" required>
+        <input type="text" class="message-input" name="message" placeholder="Your message" required>
+        <input type="text" class="color-input" name="goose_color" placeholder="Color of your goose" required>
+        <button type="submit" class="send">
             <p>Send</p>
         </button>
-    </div>
+    </form>
 
+<footer>
     <div class="footer-container">
         <div class="footer-container1">
             <div class="about-onder">
@@ -104,6 +106,8 @@
             <img src="imgs/discord.png" class="discord" alt="discord">
         </div>
     </div>
+</footer>
+
 </body>
 
 </html>

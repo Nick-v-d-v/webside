@@ -14,6 +14,7 @@
 </head>
 
 <body>
+<header>
     <div class="header-container">
         <div class="blauw"></div>
         <div class="pink">
@@ -30,6 +31,7 @@
             <p>Login</p>
         </button>
     </div>
+</header>
 
     <div class="heroes-section">
         <div class="our-heroes">
@@ -90,12 +92,12 @@
             <p>Latest news in DAOs and Web3</p>
         </div>
     </div>
-    <div class="container-weekly-digest2-2">
-        <input type="email" class="email-input" placeholder="Your email" required>
-        <button class="subscribe">
+    <form action="subscribe.php" method="post" class="container-weekly-digest2-2">
+        <input type="email" class="email-input" name="email" placeholder="Your email" required>
+        <button type="submit" class="subscribe">
             <p>Subscribe</p>
         </button>
-    </div>
+    </form>
 
     <div class="container-press">
         <div class="press">
@@ -252,6 +254,8 @@
             <p>Listen</p> <img src="imgs/arrowwit.png" class="arrowwit">
         </div>
     </div>
+
+<footer>
     <div class="onderkant-container">
         <div class="onderkant-container1">
             <div class="about-onder">
@@ -271,6 +275,8 @@
             <img src="imgs/discord.png" class="discord" alt="discord">
         </div>
     </div>
+</footer>
+
 </body>
 
 </html>
